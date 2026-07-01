@@ -2,13 +2,14 @@ import { assetUrl } from "@/lib/student-api";
 
 interface Props {
   renderPaths: string[];
-  size?: "sm" | "lg" | "xl";
+  size?: "sm" | "md" | "lg" | "xl";
   className?: string;
 }
 
 const SIZE_CLASS = {
   xl: "avatar-stack avatar-stack--xl",
   lg: "avatar-stack avatar-stack--lg",
+  md: "avatar-stack avatar-stack--md",
   sm: "avatar-stack avatar-stack--sm",
 } as const;
 

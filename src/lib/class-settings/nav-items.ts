@@ -9,6 +9,7 @@ export interface NavItem {
 export function teacherNavItems(settings: ClassSettings): NavItem[] {
   const items: NavItem[] = [
     { href: "/teacher/dashboard", label: "Dashboard" },
+    { href: "/teacher/display", label: "Class display" },
   ];
 
   if (settings.enableStore) {

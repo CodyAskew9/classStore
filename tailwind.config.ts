@@ -20,7 +20,7 @@ const config: Config = {
     },
   },
   plugins: [],
-  safelist: ["avatar-stack--xl", "avatar-stack--lg", "avatar-stack--sm"],
+  safelist: ["avatar-stack--xl", "avatar-stack--lg", "avatar-stack--md", "avatar-stack--sm"],
 };
 
 export default config;

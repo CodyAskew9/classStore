@@ -1,3 +1,5 @@
+"use client";
+
 import { Outlet } from "react-router-dom";
 import { StudentNav } from "@/components/student/StudentNav";
 

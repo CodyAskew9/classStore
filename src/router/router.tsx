@@ -1,3 +1,5 @@
+"use client";
+
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { LandingPage } from "@/views/LandingPage";
 import { LoginPage } from "@/views/LoginPage";
@@ -8,6 +10,7 @@ import { StudentAvatarPage } from "@/views/student/StudentAvatarPage";
 import { TeacherDashboardPage } from "@/views/teacher/TeacherDashboardPage";
 import { TeacherStorePage } from "@/views/teacher/TeacherStorePage";
 import { TeacherJobsPage } from "@/views/teacher/TeacherJobsPage";
+import { TeacherClassDisplayPage } from "@/views/teacher/TeacherClassDisplayPage";
 import { ParentDashboardPage } from "@/views/parent/ParentDashboardPage";
 import { StudentLayout } from "@/router/layouts/StudentLayout";
 import { TeacherLayout } from "@/router/layouts/TeacherLayout";
@@ -33,6 +36,7 @@ export function createAppRouter() {
       children: [
         { index: true, element: <Navigate to="dashboard" replace /> },
         { path: "dashboard", element: <TeacherDashboardPage /> },
+        { path: "display", element: <TeacherClassDisplayPage /> },
         { path: "store", element: <TeacherStorePage /> },
         { path: "jobs", element: <TeacherJobsPage /> },
       ],

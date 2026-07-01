@@ -200,6 +200,16 @@ body {
   overflow: hidden;
 }
 
+.avatar-stack--md {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #c9a227;
+  background: var(--accent-soft);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
 .avatar-stack--sm {
   width: 36px;
   height: 36px;
@@ -229,4 +239,176 @@ body {
 .student-hero-copy {
   flex: 1;
   min-width: 0;
+}
+
+/* Teacher class display — projector-friendly roster */
+.class-display-shell {
+  min-height: 100%;
+  padding: 1.5rem 2rem 7rem;
+  background: linear-gradient(180deg, #f8f5ee 0%, #eef4fc 100%);
+}
+
+.class-display-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.class-display-error {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b33a3a;
+}
+
+.class-display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.class-display-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  border: 2px solid #ddd6c8;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.class-display-card:hover {
+  transform: translateY(-2px);
+  border-color: #2b5ea7;
+}
+
+.class-display-card.selected {
+  border-color: #c9a227;
+  background: var(--gold-soft);
+  box-shadow: 0 8px 28px rgba(201, 162, 39, 0.25);
+}
+
+.class-display-card.flash {
+  animation: class-display-pulse 0.9s ease;
+}
+
+@keyframes class-display-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.class-display-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.class-display-balance {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2b5ea7;
+}
+
+.class-display-delta {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  animation: class-display-fade-up 0.9s ease forwards;
+}
+
+.class-display-delta.positive {
+  background: #1f7a4d;
+  color: #fff;
+}
+
+.class-display-delta.negative {
+  background: #b33a3a;
+  color: #fff;
+}
+
+@keyframes class-display-fade-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.class-display-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-top: 1px solid #ddd6c8;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 -4px 24px rgba(26, 35, 50, 0.08);
+}
+
+.class-display-actions-label {
+  font-size: 1.05rem;
+}
+
+.class-display-action-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.class-display-btn {
+  min-width: 9rem;
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.class-display-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.class-display-btn:not(:disabled):active {
+  transform: scale(0.97);
+}
+
+.class-display-btn--bonus {
+  background: #1f7a4d;
+  color: #fff;
+}
+
+.class-display-btn--deduct {
+  background: #b33a3a;
+  color: #fff;
 }
