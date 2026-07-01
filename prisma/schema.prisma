@@ -1,0 +1,173 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  TEACHER
+  STUDENT
+  PARENT
+}
+
+enum TransactionType {
+  JOB_PAYOUT
+  BEHAVIOR_BONUS
+  STORE_PURCHASE
+  TEACHER_ADJUSTMENT
+  HOME_CHORE_PAYOUT
+  HOME_ALLOWANCE
+}
+
+enum OrderStatus {
+  PENDING
+  SHIPPED
+  DELIVERED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String?  @unique
+  passwordHash String?
+  name         String
+  role         Role     @default(STUDENT)
+  classId      String?
+  avatarConfig Json?
+  createdAt    DateTime @default(now())
+
+  class        Class?              @relation(fields: [classId], references: [id], onDelete: Cascade)
+  transactions Transaction[]
+  children     ParentStudentLink[] @relation("ParentToChildren")
+  parents      ParentStudentLink[] @relation("ChildToParents")
+  teacherOrders SupplyOrder[]
+  checklists   WeeklyChecklist[]
+
+  @@index([classId])
+}
+
+model ParentStudentLink {
+  parentId  String
+  studentId String
+  parent    User   @relation("ParentToChildren", fields: [parentId], references: [id], onDelete: Cascade)
+  student   User   @relation("ChildToParents", fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@id([parentId, studentId])
+}
+
+model Class {
+  id        String   @id @default(cuid())
+  name      String
+  joinCode  String   @unique
+  createdAt DateTime @default(now())
+
+  users    User[]
+  jobs     ClassJob[]
+  items    StoreItem[]
+  settings ClassSettings?
+}
+
+model ClassSettings {
+  classId        String  @id
+  enableStore    Boolean @default(true)
+  enableBehavior Boolean @default(true)
+  enableJobs     Boolean @default(true)
+  class          Class   @relation(fields: [classId], references: [id], onDelete: Cascade)
+}
+
+model ClassJob {
+  id           String  @id @default(cuid())
+  classId      String
+  title        String
+  description  String?
+  weeklySalary Int
+  maxOpenings  Int     @default(1)
+
+  class Class @relation(fields: [classId], references: [id], onDelete: Cascade)
+}
+
+model StoreItem {
+  id          String   @id @default(cuid())
+  classId     String
+  name        String
+  description String?
+  price       Int
+  stock       Int
+  createdAt   DateTime @default(now())
+
+  class     Class         @relation(fields: [classId], references: [id], onDelete: Cascade)
+  purchases Transaction[]
+
+  @@index([classId])
+}
+
+model Transaction {
+  id          String          @id @default(cuid())
+  studentId   String
+  amount      Int
+  type        TransactionType
+  description String?
+  itemId      String?
+  createdAt   DateTime        @default(now())
+
+  student   User       @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  storeItem StoreItem? @relation(fields: [itemId], references: [id], onDelete: SetNull)
+
+  @@index([studentId])
+}
+
+model WeeklyChecklist {
+  id        String  @id @default(cuid())
+  studentId String
+  weekId    String
+  processed Boolean @default(false)
+
+  student User            @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  items   ChecklistItem[]
+
+  @@unique([studentId, weekId])
+}
+
+model ChecklistItem {
+  id          String  @id @default(cuid())
+  checklistId String
+  title       String
+  basePay     Int
+  penalty     Int
+  isCompleted Boolean @default(false)
+
+  checklist WeeklyChecklist @relation(fields: [checklistId], references: [id], onDelete: Cascade)
+}
+
+model SupplyItem {
+  id           String  @id @default(cuid())
+  title        String
+  description  String
+  priceCents   Int
+  imageUrl     String?
+  affiliateUrl String?
+  orderItems   OrderLineItem[]
+}
+
+model SupplyOrder {
+  id         String      @id @default(cuid())
+  teacherId  String
+  totalCents Int
+  status     OrderStatus @default(PENDING)
+  createdAt  DateTime    @default(now())
+
+  teacher User            @relation(fields: [teacherId], references: [id])
+  items   OrderLineItem[]
+}
+
+model OrderLineItem {
+  id           String @id @default(cuid())
+  orderId      String
+  supplyItemId String
+  quantity     Int
+
+  order      SupplyOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  supplyItem SupplyItem  @relation(fields: [supplyItemId], references: [id])
+}

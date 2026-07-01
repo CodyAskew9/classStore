@@ -8,20 +8,13 @@ import {
   slotSelectionLabel,
   type AvatarSlot,
 } from "./avatar-catalog.js";
+import { fantasyAccessoryPreviewPath } from "./avatar-fantasy.js";
 import {
-  fantasyAccessoryPreviewPath,
-  isFantasyAccessory,
-} from "./avatar-fantasy.js";
-import {
+  findOutfitIdForAccessories,
   getFantasyOutfitById,
   resolveOutfitPieces,
-  sortFantasyAccessories,
 } from "./avatar-fantasy-outfits.js";
-import {
-  isAssetForBodyType,
-  isFantasyAccessoryForBodyType,
-  type BodyType,
-} from "./avatar-gender.js";
+import { isAssetForBodyType, type BodyType } from "./avatar-gender.js";
 import {
   BOY_PRESET,
   canToggleOff,
@@ -51,7 +44,7 @@ export interface AvatarConfig {
   dress: string | null;
   gloves: string | null;
   shoes: string | null;
-  accessories: string[];
+  fantasyOutfitId: string | null;
 }
 
 export const AVATAR_DEFAULTS: AvatarConfig = { ...BOY_PRESET };
@@ -64,6 +57,14 @@ function pickGenderedSlot(
 ): string | null {
   if (!value) return fallback;
   return isAssetForBodyType(value, slot, bodyType) ? value : fallback;
+}
+
+function normalizeFantasyOutfitId(id: string | null, bodyType: BodyType): string | null {
+  if (!id) return null;
+  const outfit = getFantasyOutfitById(id);
+  if (!outfit || !outfit.bodyTypes.includes(bodyType)) return null;
+  if (resolveOutfitPieces(outfit, bodyType).length === 0) return null;
+  return id;
 }
 
 export function ensureModestConfig(config: AvatarConfig): AvatarConfig {
@@ -83,9 +84,7 @@ export function ensureModestConfig(config: AvatarConfig): AvatarConfig {
     bottom: pickGenderedSlot("bottom", modest.bottom, base.bottom, bodyType) ?? base.bottom,
     shoes: pickGenderedSlot("shoes", modest.shoes, base.shoes, bodyType) ?? base.shoes,
     gloves: pickGenderedSlot("gloves", modest.gloves, null, bodyType),
-    accessories: sortFantasyAccessories(
-      modest.accessories.filter((a) => isFantasyAccessoryForBodyType(a, bodyType)),
-    ),
+    fantasyOutfitId: normalizeFantasyOutfitId(modest.fantasyOutfitId, bodyType),
   };
 }
 
@@ -122,17 +121,13 @@ export function normalizeAvatarConfig(raw: unknown): AvatarConfig {
       ? data.bodyType
       : inferBodyType(body);
 
-  const accessories = (() => {
-    if (Array.isArray(data.accessories)) {
-      return data.accessories.filter(
-        (a): a is string => typeof a === "string" && isFantasyAccessory(a),
-      );
-    }
-    if (typeof data.accessory === "string" && isFantasyAccessory(data.accessory)) {
-      return [data.accessory];
-    }
-    return [];
-  })();
+  let fantasyOutfitId =
+    typeof data.fantasyOutfitId === "string" ? data.fantasyOutfitId : null;
+
+  if (!fantasyOutfitId && Array.isArray(data.accessories)) {
+    const legacy = data.accessories.filter((a): a is string => typeof a === "string");
+    fantasyOutfitId = findOutfitIdForAccessories(legacy, bodyType);
+  }
 
   const draft: AvatarConfig = {
     colorMode: data.colorMode !== false,
@@ -162,7 +157,7 @@ export function normalizeAvatarConfig(raw: unknown): AvatarConfig {
     dress: migrateConfigField("dress", str("dress", null)),
     gloves: migrateConfigField("gloves", str("gloves", null)),
     shoes: migrateConfigField("shoes", str("shoes", null)),
-    accessories,
+    fantasyOutfitId,
   };
 
   return ensureModestConfig(draft);
@@ -187,8 +182,13 @@ export function getAvatarRenderPaths(config: AvatarConfig): string[] {
     paths.push(resolveAssetUrlPath(folder, filename, modest.colorMode));
   }
 
-  for (const filename of modest.accessories) {
-    paths.push(fantasyAccessoryPreviewPath(filename));
+  if (modest.fantasyOutfitId) {
+    const outfit = getFantasyOutfitById(modest.fantasyOutfitId);
+    if (outfit) {
+      for (const piece of resolveOutfitPieces(outfit, modest.bodyType)) {
+        paths.push(fantasyAccessoryPreviewPath(piece));
+      }
+    }
   }
 
   return paths;
@@ -199,7 +199,6 @@ export function isAssetSelected(
   slot: AvatarSlot,
   filename: string,
 ): boolean {
-  if (slot === "accessory") return config.accessories.includes(filename);
   return slotValue(config, slot) === filename;
 }
 
@@ -221,7 +220,7 @@ export function applyBodyType(config: AvatarConfig, bodyType: BodyType): AvatarC
     hairBack: null,
     hairBonus: null,
     gloves: null,
-    accessories: [],
+    fantasyOutfitId: null,
   });
 }
 
@@ -233,7 +232,11 @@ export function applyFantasyOutfit(config: AvatarConfig, outfitId: string): Avat
   const pieces = resolveOutfitPieces(outfit, modest.bodyType);
   if (pieces.length === 0) return modest;
 
-  return ensureModestConfig({ ...modest, accessories: pieces });
+  if (modest.fantasyOutfitId === outfitId) {
+    return ensureModestConfig({ ...modest, fantasyOutfitId: null });
+  }
+
+  return ensureModestConfig({ ...modest, fantasyOutfitId: outfitId });
 }
 
 export function applySlotSelection(
@@ -243,13 +246,7 @@ export function applySlotSelection(
 ): AvatarConfig {
   const modest = ensureModestConfig(config);
 
-  if (slot === "accessory") {
-    if (!isFantasyAccessory(filename)) return modest;
-    const accessories = modest.accessories.includes(filename)
-      ? modest.accessories.filter((a) => a !== filename)
-      : [...modest.accessories, filename];
-    return ensureModestConfig({ ...modest, accessories });
-  }
+  if (slot === "accessory") return modest;
 
   const cat = getCategoryBySlot(slot);
   const assets =

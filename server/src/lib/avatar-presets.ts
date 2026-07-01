@@ -33,7 +33,7 @@ export const BOY_PRESET: AvatarConfig = {
   dress: null,
   gloves: null,
   shoes: "shoes_01.png",
-  accessories: [],
+  fantasyOutfitId: null,
 };
 
 export const GIRL_PRESET: AvatarConfig = {
@@ -54,7 +54,7 @@ export const GIRL_PRESET: AvatarConfig = {
   dress: null,
   gloves: null,
   shoes: "shoes_01.png",
-  accessories: [],
+  fantasyOutfitId: null,
 };
 
 export function presetForBodyType(bodyType: BodyType): AvatarConfig {
@@ -82,9 +82,8 @@ export function ensureModestBase(config: AvatarConfig): AvatarConfig {
     eyebrows: config.eyebrows || base.eyebrows,
     eyelashes: config.eyelashes || base.eyelashes,
     hair: config.hair || base.hair,
-    accessories: Array.isArray(config.accessories)
-      ? config.accessories.filter((a) => typeof a === "string")
-      : [],
+    fantasyOutfitId:
+      typeof config.fantasyOutfitId === "string" ? config.fantasyOutfitId : null,
   };
 
   if (next.dress) {

@@ -1,9 +1,6 @@
 import type { BodyType } from "./avatar-gender.js";
-import { FANTASY_ACCESSORIES, isFantasyAccessory } from "./avatar-fantasy.js";
+import { fantasyAccessoryPreviewPath, isFantasyAccessory } from "./avatar-fantasy.js";
 import { isFantasyAccessoryForBodyType } from "./avatar-gender.js";
-
-/** Reference image showing the three featured fantasy armor sets */
-export const FANTASY_OUTFIT_GUIDE = "guideArmor.png";
 
 export interface FantasyOutfit {
   id: string;
@@ -113,6 +110,10 @@ export function resolveOutfitPieces(outfit: FantasyOutfit, bodyType: BodyType): 
   );
 }
 
+export function outfitPreviewPaths(outfit: FantasyOutfit, bodyType: BodyType): string[] {
+  return resolveOutfitPieces(outfit, bodyType).map(fantasyAccessoryPreviewPath);
+}
+
 export function getFantasyOutfitsForBodyType(bodyType: BodyType): FantasyOutfit[] {
   return FANTASY_OUTFITS.filter((outfit) => outfit.bodyTypes.includes(bodyType))
     .map((outfit) => ({
@@ -126,21 +127,25 @@ export function getFantasyOutfitById(id: string): FantasyOutfit | undefined {
   return FANTASY_OUTFITS.find((outfit) => outfit.id === id);
 }
 
-export function isOutfitFullyEquipped(
+export function findOutfitIdForAccessories(
   accessories: readonly string[],
-  outfit: FantasyOutfit,
   bodyType: BodyType,
-): boolean {
-  const pieces = resolveOutfitPieces(outfit, bodyType);
-  if (pieces.length === 0) return false;
-  const equipped = new Set(accessories);
-  return pieces.every((piece) => equipped.has(piece));
+): string | null {
+  if (accessories.length === 0) return null;
+
+  for (const outfit of FANTASY_OUTFITS) {
+    if (!outfit.bodyTypes.includes(bodyType)) continue;
+    const pieces = resolveOutfitPieces(outfit, bodyType);
+    if (pieces.length === 0) continue;
+    const equipped = new Set(accessories);
+    if (pieces.length === accessories.length && pieces.every((piece) => equipped.has(piece))) {
+      return outfit.id;
+    }
+  }
+
+  return null;
 }
 
-/** Stable render order for equipped fantasy pieces */
-export function sortFantasyAccessories(accessories: readonly string[]): string[] {
-  const order = new Map(FANTASY_ACCESSORIES.map((name, index) => [name, index]));
-  return [...accessories].sort(
-    (a, b) => (order.get(a) ?? Number.MAX_SAFE_INTEGER) - (order.get(b) ?? Number.MAX_SAFE_INTEGER),
-  );
+export function isOutfitEquipped(fantasyOutfitId: string | null, outfitId: string): boolean {
+  return fantasyOutfitId === outfitId;
 }

@@ -44,7 +44,7 @@ model User {
   subscriptionTier    SubscriptionTier @default(FREE)
   subscriptionEndsAt  DateTime?
   classId             String?
-  avatarConfig        Json             @default("{\"colorMode\":true,\"bodyType\":\"male\",\"body\":\"body_01.png\",\"pupils\":\"pupils_01.png\",\"eyebrows\":\"eyebrows_01.png\",\"eyelashes\":\"eyelashes_01.png\",\"mouth\":null,\"beard\":null,\"hairBack\":null,\"hair\":\"hair_01.png\",\"bangs\":null,\"hairBonus\":null,\"top\":\"top_01.png\",\"bottom\":\"bottom_01.png\",\"dress\":null,\"gloves\":null,\"shoes\":\"shoes_01.png\",\"accessories\":[]}")
+  avatarConfig        Json             @default("{\"colorMode\":true,\"bodyType\":\"male\",\"body\":\"body_01.png\",\"pupils\":\"pupils_01.png\",\"eyebrows\":\"eyebrows_01.png\",\"eyelashes\":\"eyelashes_01.png\",\"mouth\":null,\"beard\":null,\"hairBack\":null,\"hair\":\"hair_01.png\",\"bangs\":null,\"hairBonus\":null,\"top\":\"top_01.png\",\"bottom\":\"bottom_01.png\",\"dress\":null,\"gloves\":null,\"shoes\":\"shoes_01.png\",\"fantasyOutfitId\":null}")
   createdAt           DateTime         @default(now())
 
   class        Class?    @relation(fields: [classId], references: [id], onDelete: Cascade)

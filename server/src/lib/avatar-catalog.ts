@@ -10,10 +10,9 @@ import {
   type BodyType,
 } from "./avatar-presets.js";
 import {
-  FANTASY_ACCESSORIES,
-  fantasyAccessoryPreviewPath,
-} from "./avatar-fantasy.js";
-import { FANTASY_OUTFIT_GUIDE, getFantasyOutfitsForBodyType } from "./avatar-fantasy-outfits.js";
+  getFantasyOutfitsForBodyType,
+  outfitPreviewPaths,
+} from "./avatar-fantasy-outfits.js";
 import {
   filterAssetsForBodyType,
   isSlotVisibleForBodyType,
@@ -110,7 +109,6 @@ export const STUDENT_VISIBLE_SLOTS: AvatarSlot[] = [
   "dress",
   "shoes",
   "gloves",
-  "accessory",
 ];
 
 function isPng(name: string): boolean {
@@ -154,15 +152,6 @@ function filterAssets(slot: AvatarSlot, assets: string[]): string[] {
   return assets;
 }
 
-function listAccessoryAssets(bodyType: BodyType): CatalogAsset[] {
-  return filterAssetsForBodyType("accessory", [...FANTASY_ACCESSORIES], bodyType).map(
-    (filename) => ({
-      filename,
-      previewPath: fantasyAccessoryPreviewPath(filename),
-    }),
-  );
-}
-
 export function getCategoryBySlot(slot: AvatarSlot): CategoryDef {
   const cat = AVATAR_CATEGORIES.find((c) => c.slot === slot);
   if (!cat) throw new Error(`Unknown slot: ${slot}`);
@@ -175,12 +164,11 @@ export function buildCatalog(preferColor = true, bodyType: BodyType = "male") {
       male: { label: "Boy", preset: BOY_PRESET, bodies: [...SHARED_BODY_COLORS] },
       female: { label: "Girl", preset: GIRL_PRESET, bodies: [...SHARED_BODY_COLORS] },
     },
-    fantasyOutfitGuide: FANTASY_OUTFIT_GUIDE,
     fantasyOutfits: getFantasyOutfitsForBodyType(bodyType).map((outfit) => ({
       id: outfit.id,
       label: outfit.label,
       description: outfit.description,
-      pieces: [...outfit.pieces],
+      previewPaths: outfitPreviewPaths(outfit, bodyType),
     })),
     categories: AVATAR_CATEGORIES.filter(
       (c) => STUDENT_VISIBLE_SLOTS.includes(c.slot) && isSlotVisibleForBodyType(c.slot, bodyType),
@@ -189,17 +177,14 @@ export function buildCatalog(preferColor = true, bodyType: BodyType = "male") {
       label: cat.label,
       required: cat.required,
       toggle: cat.toggle,
-      assets:
-        cat.slot === "accessory"
-          ? listAccessoryAssets(bodyType)
-          : filterAssetsForBodyType(
-              cat.slot,
-              filterAssets(cat.slot, listCategoryAssets(cat.folder, preferColor)),
-              bodyType,
-            ).map((filename) => ({
-              filename,
-              previewPath: resolveAssetUrlPath(cat.folder, filename, preferColor),
-            })),
+      assets: filterAssetsForBodyType(
+        cat.slot,
+        filterAssets(cat.slot, listCategoryAssets(cat.folder, preferColor)),
+        bodyType,
+      ).map((filename) => ({
+        filename,
+        previewPath: resolveAssetUrlPath(cat.folder, filename, preferColor),
+      })),
     })),
   };
 }

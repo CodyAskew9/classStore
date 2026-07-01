@@ -20,7 +20,7 @@ const BOY_AVATAR = {
   dress: null,
   gloves: null,
   shoes: "shoes_01.png",
-  accessories: [],
+  fantasyOutfitId: null,
 };
 
 async function main() {
