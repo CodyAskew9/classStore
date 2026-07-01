@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next dev --port 3000",
     "dev:clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && next dev --port 3000",
-    "build": "node scripts/check-dev-not-running.mjs && next build",
+    "build:atlas": "node scripts/build-avatar-atlas.mjs",
+    "predev": "node scripts/ensure-avatar-atlas.mjs",
+    "build": "node scripts/check-dev-not-running.mjs && node scripts/build-avatar-atlas.mjs && next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "prisma generate",
@@ -28,6 +30,7 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",
     "prisma": "^6.9.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"

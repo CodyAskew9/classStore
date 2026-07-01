@@ -11,7 +11,7 @@ import {
 } from "./avatar-presets";
 import {
   getFantasyOutfitsForBodyType,
-  outfitPreviewPaths,
+  getOutfitPreviewRenderPaths,
 } from "./avatar-fantasy-outfits";
 import {
   filterAssetsForBodyType,
@@ -168,7 +168,7 @@ export function buildCatalog(preferColor = true, bodyType: BodyType = "male") {
       id: outfit.id,
       label: outfit.label,
       description: outfit.description,
-      previewPaths: outfitPreviewPaths(outfit, bodyType),
+      previewPaths: getOutfitPreviewRenderPaths(outfit, bodyType),
     })),
     categories: AVATAR_CATEGORIES.filter(
       (c) => STUDENT_VISIBLE_SLOTS.includes(c.slot) && isSlotVisibleForBodyType(c.slot, bodyType),

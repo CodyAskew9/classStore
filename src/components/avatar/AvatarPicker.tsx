@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useState } from "react";
 import {
   assetLabel,
-  assetUrl,
   fetchAvatarCatalog,
   isAssetSelected,
   selectAvatarSlot,
@@ -16,6 +15,7 @@ import {
   type StudentProfile,
 } from "@/lib/student-api";
 import { AvatarComposer } from "./AvatarComposer";
+import { AvatarSpriteOption } from "./AvatarSpriteOption";
 
 interface Props {
   student: StudentProfile;
@@ -138,7 +138,7 @@ export function AvatarPicker({ student, onAvatarChange }: Props) {
       </div>
 
       <div className="current-avatar-wrap">
-        <AvatarComposer renderPaths={student.avatarRenderPaths} size="lg" />
+        <AvatarComposer renderPaths={student.avatarRenderPaths} size="xl" shape="portrait" />
       </div>
 
       {error && <p className="error-banner">{error}</p>}
@@ -204,7 +204,7 @@ export function AvatarPicker({ student, onAvatarChange }: Props) {
           {activeTab === "Fantasy" ? (
             <div className="avatar-section">
               <p className="section-hint text-sm text-muted">
-                Pick one fantasy outfit — tap again to take it off
+                Pick one fantasy outfit — replaces regular clothes. Tap again to take it off.
               </p>
               <div className="fantasy-outfit-grid" role="listbox" aria-label="Fantasy outfits">
                 {catalog.fantasyOutfits.map((outfit) => {
@@ -220,7 +220,11 @@ export function AvatarPicker({ student, onAvatarChange }: Props) {
                       disabled={!!saving}
                       title={outfit.description}
                     >
-                      <AvatarComposer renderPaths={outfit.previewPaths} size="sm" />
+                      <AvatarComposer
+                        renderPaths={outfit.previewPaths}
+                        size="lg"
+                        shape="portrait"
+                      />
                       <span className="fantasy-outfit-name">{outfit.label}</span>
                       {selected && <span className="avatar-check">✓</span>}
                     </button>
@@ -248,19 +252,16 @@ export function AvatarPicker({ student, onAvatarChange }: Props) {
                     const key = `${activeSlot}:${item.filename}`;
                     const isSaving = saving === key;
                     return (
-                      <button
+                      <AvatarSpriteOption
                         key={key}
-                        type="button"
-                        role="option"
-                        aria-selected={selected}
-                        className={`avatar-option${selected ? " selected" : ""}${isSaving ? " saving" : ""}`}
+                        slot={activeSlot}
+                        previewPath={item.previewPath}
+                        selected={selected}
+                        saving={isSaving}
+                        title={assetLabel(item.filename)}
                         onClick={() => handleSelect(activeSlot, item.filename)}
                         disabled={!!saving}
-                        title={assetLabel(item.filename)}
-                      >
-                        <img src={assetUrl(item.previewPath)} alt="" />
-                        {selected && <span className="avatar-check">✓</span>}
-                      </button>
+                      />
                     );
                   })}
                 </div>

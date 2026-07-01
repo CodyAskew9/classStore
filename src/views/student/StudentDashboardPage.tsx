@@ -44,7 +44,7 @@ export function StudentDashboardPage() {
     <div className="mx-auto max-w-5xl px-6 py-8">
       <section className="student-hero panel mb-8">
         <div className="student-hero-inner">
-          <AvatarComposer renderPaths={data.avatarRenderPaths} size="xl" />
+          <AvatarComposer renderPaths={data.avatarRenderPaths} size="xl" shape="portrait" />
           <div className="student-hero-copy">
             <p className="text-sm font-semibold uppercase tracking-wide text-gold">Your hero</p>
             <h1 className="font-display text-3xl font-bold sm:text-4xl">Hi, {data.name}</h1>

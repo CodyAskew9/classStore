@@ -21,7 +21,7 @@ const MALE_FANTASY_PATTERNS = [
   /chestplate_/,
   /gauntlet_/,
   /sword_/,
-  /axe_/,
+  /shoulder_pauldron_/,
   /^arm_/,
   /vest_/,
   /jacket_/,
@@ -42,8 +42,11 @@ const UNISEX_FANTASY = new Set([
   "belt_teal_yinyang.png",
   "sleeves_white_gold.png",
   "shoes_orange_gold.png",
-  "scroll_map.png",
   "boots_navy_gold_swirl.png",
+  "shoulder_pauldron_gold.png",
+  "shoulder_pauldron_white_gold.png",
+  "shoulder_pauldron_buckle_gold.png",
+  "greaves_white_trident.png",
 ]);
 
 function assetIndex(filename: string): number | null {

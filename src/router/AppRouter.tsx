@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { RouterProvider } from "react-router-dom";
+import { AvatarAtlasProvider } from "@/components/avatar/AvatarAtlasProvider";
 import { createAppRouter } from "@/router/router";
 
 type AppRouterInstance = ReturnType<typeof createAppRouter>;
@@ -17,5 +18,9 @@ export function AppRouter() {
     return <p className="loading text-center text-muted">Loading…</p>;
   }
 
-  return <RouterProvider router={router} />;
+  return (
+    <AvatarAtlasProvider>
+      <RouterProvider router={router} />
+    </AvatarAtlasProvider>
+  );
 }

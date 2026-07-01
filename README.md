@@ -26,3 +26,11 @@ npm run dev:legacy-client   # Vite client on :5173
 ```
 
 If you run `npm run dev` from inside `server/` or `client/`, it forwards to the root Next.js dev server.
+
+### Avatar sprite atlas
+
+Avatar layers are packed into a single WebP sprite sheet (`assets/avatar-atlas/`) so each composed avatar loads **one cached image** instead of ~8 separate PNGs. The atlas rebuilds automatically on `npm run dev` when PNGs change, or manually:
+
+```bash
+npm run build:atlas
+```

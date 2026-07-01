@@ -11,6 +11,7 @@ import {
 import { fantasyAccessoryPreviewPath } from "./avatar-fantasy";
 import {
   findOutfitIdForAccessories,
+  fantasyOutfitCoversTorso,
   getFantasyOutfitById,
   resolveOutfitPieces,
 } from "./avatar-fantasy-outfits";
@@ -171,11 +172,32 @@ export function getAvatarCatalog(bodyType: BodyType = "male") {
   };
 }
 
+const FANTASY_REPLACES_CLOTHING: readonly AvatarSlot[] = [
+  "top",
+  "bottom",
+  "dress",
+  "shoes",
+  "gloves",
+];
+
 export function getAvatarRenderPaths(config: AvatarConfig): string[] {
   const modest = ensureModestConfig(config);
   const paths: string[] = [];
+  const fantasyActive = !!modest.fantasyOutfitId;
+  const fantasyOutfit = modest.fantasyOutfitId
+    ? getFantasyOutfitById(modest.fantasyOutfitId)
+    : null;
+  const fantasyCoversTorso =
+    fantasyOutfit != null && fantasyOutfitCoversTorso(fantasyOutfit, modest.bodyType);
 
   for (const slot of RENDER_ORDER) {
+    if (fantasyActive && (FANTASY_REPLACES_CLOTHING as readonly string[]).includes(slot)) {
+      if (slot === "top" && !fantasyCoversTorso) {
+        // Keep base top when fantasy set has no shirt/armor layer
+      } else {
+        continue;
+      }
+    }
     const filename = slotValue(modest, slot);
     if (!filename) continue;
     const { folder } = getCategoryBySlot(slot);
@@ -183,7 +205,7 @@ export function getAvatarRenderPaths(config: AvatarConfig): string[] {
   }
 
   if (modest.fantasyOutfitId) {
-    const outfit = getFantasyOutfitById(modest.fantasyOutfitId);
+    const outfit = fantasyOutfit ?? getFantasyOutfitById(modest.fantasyOutfitId);
     if (outfit) {
       for (const piece of resolveOutfitPieces(outfit, modest.bodyType)) {
         paths.push(fantasyAccessoryPreviewPath(piece));
@@ -263,9 +285,11 @@ export function applySlotSelection(
   let next: AvatarConfig = { ...modest, [slot]: filename };
 
   if (slot === "dress") {
-    next = { ...next, top: null, bottom: null };
+    next = { ...next, top: null, bottom: null, fantasyOutfitId: null };
   } else if (slot === "top" || slot === "bottom") {
-    next = { ...next, dress: null };
+    next = { ...next, dress: null, fantasyOutfitId: null };
+  } else if (slot === "shoes" || slot === "gloves") {
+    next = { ...next, fantasyOutfitId: null };
   }
 
   return ensureModestConfig(next);

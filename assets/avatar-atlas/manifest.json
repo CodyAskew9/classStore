@@ -1,0 +1,2391 @@
+{
+  "version": 1,
+  "sheet": "avatar-atlas/atlas.webp",
+  "frameWidth": 222,
+  "frameHeight": 350,
+  "sheetWidth": 5550,
+  "sheetHeight": 8400,
+  "frameCount": 595,
+  "frames": {
+    "avatar/bangs/bangs_01.png": {
+      "x": 0,
+      "y": 0
+    },
+    "avatar/bangs/bangs_02.png": {
+      "x": 222,
+      "y": 0
+    },
+    "avatar/bangs/bangs_03.png": {
+      "x": 444,
+      "y": 0
+    },
+    "avatar/bangs/bangs_04.png": {
+      "x": 666,
+      "y": 0
+    },
+    "avatar/bangs/bangs_05.png": {
+      "x": 888,
+      "y": 0
+    },
+    "avatar/bangs/bangs_06.png": {
+      "x": 1110,
+      "y": 0
+    },
+    "avatar/bangs/bangs_07.png": {
+      "x": 1332,
+      "y": 0
+    },
+    "avatar/bangs/bangs_08.png": {
+      "x": 1554,
+      "y": 0
+    },
+    "avatar/bangs/bangs_09.png": {
+      "x": 1776,
+      "y": 0
+    },
+    "avatar/bangs/bangs_10.png": {
+      "x": 1998,
+      "y": 0
+    },
+    "avatar/bangs/bangs_11.png": {
+      "x": 2220,
+      "y": 0
+    },
+    "avatar/bangs/bangs_12.png": {
+      "x": 2442,
+      "y": 0
+    },
+    "avatar/bangs/bangs_13.png": {
+      "x": 2664,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01.png": {
+      "x": 2886,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01b.png": {
+      "x": 3108,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01c.png": {
+      "x": 3330,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01d.png": {
+      "x": 3552,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01e.png": {
+      "x": 3774,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01f.png": {
+      "x": 3996,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01g.png": {
+      "x": 4218,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_01h.png": {
+      "x": 4440,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_02.png": {
+      "x": 4662,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_02b.png": {
+      "x": 4884,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_02c.png": {
+      "x": 5106,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_02d.png": {
+      "x": 5328,
+      "y": 0
+    },
+    "avatar/bangs/COLOR/bangs_02e.png": {
+      "x": 0,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_02f.png": {
+      "x": 222,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_02g.png": {
+      "x": 444,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_02h.png": {
+      "x": 666,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03.png": {
+      "x": 888,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03b.png": {
+      "x": 1110,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03c.png": {
+      "x": 1332,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03d.png": {
+      "x": 1554,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03e.png": {
+      "x": 1776,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03f.png": {
+      "x": 1998,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03g.png": {
+      "x": 2220,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_03h.png": {
+      "x": 2442,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04.png": {
+      "x": 2664,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04b.png": {
+      "x": 2886,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04c.png": {
+      "x": 3108,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04d.png": {
+      "x": 3330,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04e.png": {
+      "x": 3552,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04f.png": {
+      "x": 3774,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04g.png": {
+      "x": 3996,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_04h.png": {
+      "x": 4218,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_05.png": {
+      "x": 4440,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_05b.png": {
+      "x": 4662,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_05c.png": {
+      "x": 4884,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_05d.png": {
+      "x": 5106,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_05e.png": {
+      "x": 5328,
+      "y": 350
+    },
+    "avatar/bangs/COLOR/bangs_05f.png": {
+      "x": 0,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_05g.png": {
+      "x": 222,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_05h.png": {
+      "x": 444,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06.png": {
+      "x": 666,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06b.png": {
+      "x": 888,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06c.png": {
+      "x": 1110,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06d.png": {
+      "x": 1332,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06e.png": {
+      "x": 1554,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06f.png": {
+      "x": 1776,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06g.png": {
+      "x": 1998,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_06h.png": {
+      "x": 2220,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07.png": {
+      "x": 2442,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07b.png": {
+      "x": 2664,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07c.png": {
+      "x": 2886,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07d.png": {
+      "x": 3108,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07e.png": {
+      "x": 3330,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07f.png": {
+      "x": 3552,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07g.png": {
+      "x": 3774,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_07h.png": {
+      "x": 3996,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08.png": {
+      "x": 4218,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08b.png": {
+      "x": 4440,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08c.png": {
+      "x": 4662,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08d.png": {
+      "x": 4884,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08e.png": {
+      "x": 5106,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08f.png": {
+      "x": 5328,
+      "y": 700
+    },
+    "avatar/bangs/COLOR/bangs_08g.png": {
+      "x": 0,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_08h.png": {
+      "x": 222,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09.png": {
+      "x": 444,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09b.png": {
+      "x": 666,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09c.png": {
+      "x": 888,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09d.png": {
+      "x": 1110,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09e.png": {
+      "x": 1332,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09f.png": {
+      "x": 1554,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09g.png": {
+      "x": 1776,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_09h.png": {
+      "x": 1998,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10.png": {
+      "x": 2220,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10b.png": {
+      "x": 2442,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10c.png": {
+      "x": 2664,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10d.png": {
+      "x": 2886,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10e.png": {
+      "x": 3108,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10f.png": {
+      "x": 3330,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10g.png": {
+      "x": 3552,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_10h.png": {
+      "x": 3774,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11.png": {
+      "x": 3996,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11b.png": {
+      "x": 4218,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11c.png": {
+      "x": 4440,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11d.png": {
+      "x": 4662,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11e.png": {
+      "x": 4884,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11f.png": {
+      "x": 5106,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11g.png": {
+      "x": 5328,
+      "y": 1050
+    },
+    "avatar/bangs/COLOR/bangs_11h.png": {
+      "x": 0,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12.png": {
+      "x": 222,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12b.png": {
+      "x": 444,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12c.png": {
+      "x": 666,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12d.png": {
+      "x": 888,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12e.png": {
+      "x": 1110,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12f.png": {
+      "x": 1332,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12g.png": {
+      "x": 1554,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_12h.png": {
+      "x": 1776,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13.png": {
+      "x": 1998,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13b.png": {
+      "x": 2220,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13c.png": {
+      "x": 2442,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13d.png": {
+      "x": 2664,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13e.png": {
+      "x": 2886,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13f.png": {
+      "x": 3108,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13g.png": {
+      "x": 3330,
+      "y": 1400
+    },
+    "avatar/bangs/COLOR/bangs_13h.png": {
+      "x": 3552,
+      "y": 1400
+    },
+    "avatar/BEARD/beard_01.png": {
+      "x": 3774,
+      "y": 1400
+    },
+    "avatar/BEARD/beard_02.png": {
+      "x": 3996,
+      "y": 1400
+    },
+    "avatar/BEARD/beard_03.png": {
+      "x": 4218,
+      "y": 1400
+    },
+    "avatar/BEARD/beard_04.png": {
+      "x": 4440,
+      "y": 1400
+    },
+    "avatar/BEARD/beard_05.png": {
+      "x": 4662,
+      "y": 1400
+    },
+    "avatar/body/body_01.png": {
+      "x": 4884,
+      "y": 1400
+    },
+    "avatar/body/body_02.png": {
+      "x": 5106,
+      "y": 1400
+    },
+    "avatar/body/body_03.png": {
+      "x": 5328,
+      "y": 1400
+    },
+    "avatar/body/body_04.png": {
+      "x": 0,
+      "y": 1750
+    },
+    "avatar/body/body_05.png": {
+      "x": 222,
+      "y": 1750
+    },
+    "avatar/body/body_06.png": {
+      "x": 444,
+      "y": 1750
+    },
+    "avatar/body/body_07.png": {
+      "x": 666,
+      "y": 1750
+    },
+    "avatar/body/body_08.png": {
+      "x": 888,
+      "y": 1750
+    },
+    "avatar/body/body_09.png": {
+      "x": 1110,
+      "y": 1750
+    },
+    "avatar/body/body_10.png": {
+      "x": 1332,
+      "y": 1750
+    },
+    "avatar/body/body_11.png": {
+      "x": 1554,
+      "y": 1750
+    },
+    "avatar/body/body_12.png": {
+      "x": 1776,
+      "y": 1750
+    },
+    "avatar/body/body_13.png": {
+      "x": 1998,
+      "y": 1750
+    },
+    "avatar/body/body_14.png": {
+      "x": 2220,
+      "y": 1750
+    },
+    "avatar/body/body_15.png": {
+      "x": 2442,
+      "y": 1750
+    },
+    "avatar/body/body_16.png": {
+      "x": 2664,
+      "y": 1750
+    },
+    "avatar/body/body_17.png": {
+      "x": 2886,
+      "y": 1750
+    },
+    "avatar/body/body_18.png": {
+      "x": 3108,
+      "y": 1750
+    },
+    "avatar/body/body_19.png": {
+      "x": 3330,
+      "y": 1750
+    },
+    "avatar/body/body_20.png": {
+      "x": 3552,
+      "y": 1750
+    },
+    "avatar/body/body_21.png": {
+      "x": 3774,
+      "y": 1750
+    },
+    "avatar/body/body_22.png": {
+      "x": 3996,
+      "y": 1750
+    },
+    "avatar/body/body_23.png": {
+      "x": 4218,
+      "y": 1750
+    },
+    "avatar/body/body_24.png": {
+      "x": 4440,
+      "y": 1750
+    },
+    "avatar/body/body_25.png": {
+      "x": 4662,
+      "y": 1750
+    },
+    "avatar/body/body_26.png": {
+      "x": 4884,
+      "y": 1750
+    },
+    "avatar/body/body_27.png": {
+      "x": 5106,
+      "y": 1750
+    },
+    "avatar/body/body_28.png": {
+      "x": 5328,
+      "y": 1750
+    },
+    "avatar/body/body_29.png": {
+      "x": 0,
+      "y": 2100
+    },
+    "avatar/body/body_arm_left.png": {
+      "x": 222,
+      "y": 2100
+    },
+    "avatar/body/body_arm_right.png": {
+      "x": 444,
+      "y": 2100
+    },
+    "avatar/body/body_belly.png": {
+      "x": 666,
+      "y": 2100
+    },
+    "avatar/body/body_boobs.png": {
+      "x": 888,
+      "y": 2100
+    },
+    "avatar/body/body_chest.png": {
+      "x": 1110,
+      "y": 2100
+    },
+    "avatar/body/body_feet_left.png": {
+      "x": 1332,
+      "y": 2100
+    },
+    "avatar/body/body_feet_right.png": {
+      "x": 1554,
+      "y": 2100
+    },
+    "avatar/body/body_full.png": {
+      "x": 1776,
+      "y": 2100
+    },
+    "avatar/body/body_hand_left.png": {
+      "x": 1998,
+      "y": 2100
+    },
+    "avatar/body/body_hand_right.png": {
+      "x": 2220,
+      "y": 2100
+    },
+    "avatar/body/body_head.png": {
+      "x": 2442,
+      "y": 2100
+    },
+    "avatar/body/body_layered.png": {
+      "x": 2664,
+      "y": 2100
+    },
+    "avatar/body/body_leg_left.png": {
+      "x": 2886,
+      "y": 2100
+    },
+    "avatar/body/body_leg_right.png": {
+      "x": 3108,
+      "y": 2100
+    },
+    "avatar/body/body_muscles.png": {
+      "x": 3330,
+      "y": 2100
+    },
+    "avatar/body/body_neck.png": {
+      "x": 3552,
+      "y": 2100
+    },
+    "avatar/body/body_pecs.png": {
+      "x": 3774,
+      "y": 2100
+    },
+    "avatar/body/body_thight_left.png": {
+      "x": 3996,
+      "y": 2100
+    },
+    "avatar/body/body_thight_right.png": {
+      "x": 4218,
+      "y": 2100
+    },
+    "avatar/bottom/bottom_01.png": {
+      "x": 4440,
+      "y": 2100
+    },
+    "avatar/bottom/bottom_02.png": {
+      "x": 4662,
+      "y": 2100
+    },
+    "avatar/bottom/bottom_03.png": {
+      "x": 4884,
+      "y": 2100
+    },
+    "avatar/bottom/bottom_04.png": {
+      "x": 5106,
+      "y": 2100
+    },
+    "avatar/bottom/bottom_05.png": {
+      "x": 5328,
+      "y": 2100
+    },
+    "avatar/bottom/bottom_06.png": {
+      "x": 0,
+      "y": 2450
+    },
+    "avatar/bottom/bottom_07.png": {
+      "x": 222,
+      "y": 2450
+    },
+    "avatar/bottom/bottom_08.png": {
+      "x": 444,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_01.png": {
+      "x": 666,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_02.png": {
+      "x": 888,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_03.png": {
+      "x": 1110,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_04.png": {
+      "x": 1332,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_05.png": {
+      "x": 1554,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_06.png": {
+      "x": 1776,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_07.png": {
+      "x": 1998,
+      "y": 2450
+    },
+    "avatar/bottom/color/bottom_08.png": {
+      "x": 2220,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_01.png": {
+      "x": 2442,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_02.png": {
+      "x": 2664,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_03.png": {
+      "x": 2886,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_04.png": {
+      "x": 3108,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_05.png": {
+      "x": 3330,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_06.png": {
+      "x": 3552,
+      "y": 2450
+    },
+    "avatar/dress/COLORS/dress_07.png": {
+      "x": 3774,
+      "y": 2450
+    },
+    "avatar/dress/dress_01.png": {
+      "x": 3996,
+      "y": 2450
+    },
+    "avatar/dress/dress_02.png": {
+      "x": 4218,
+      "y": 2450
+    },
+    "avatar/dress/dress_03.png": {
+      "x": 4440,
+      "y": 2450
+    },
+    "avatar/dress/dress_04.png": {
+      "x": 4662,
+      "y": 2450
+    },
+    "avatar/dress/dress_05.png": {
+      "x": 4884,
+      "y": 2450
+    },
+    "avatar/dress/dress_06.png": {
+      "x": 5106,
+      "y": 2450
+    },
+    "avatar/dress/dress_07.png": {
+      "x": 5328,
+      "y": 2450
+    },
+    "avatar/EYEBROWS/eyebrows_01.png": {
+      "x": 0,
+      "y": 2800
+    },
+    "avatar/EYEBROWS/eyebrows_02.png": {
+      "x": 222,
+      "y": 2800
+    },
+    "avatar/EYEBROWS/eyebrows_03.png": {
+      "x": 444,
+      "y": 2800
+    },
+    "avatar/EYEBROWS/eyebrows_04.png": {
+      "x": 666,
+      "y": 2800
+    },
+    "avatar/EYEBROWS/eyebrows_05.png": {
+      "x": 888,
+      "y": 2800
+    },
+    "avatar/EYELASHES/eyelashes_01.png": {
+      "x": 1110,
+      "y": 2800
+    },
+    "avatar/EYELASHES/eyelashes_02.png": {
+      "x": 1332,
+      "y": 2800
+    },
+    "avatar/EYELASHES/eyelashes_03.png": {
+      "x": 1554,
+      "y": 2800
+    },
+    "avatar/EYELASHES/eyelashes_04.png": {
+      "x": 1776,
+      "y": 2800
+    },
+    "avatar/EYELASHES/eyelashes_05.png": {
+      "x": 1998,
+      "y": 2800
+    },
+    "avatar/gloves/COLOR/gloves_01.png": {
+      "x": 2220,
+      "y": 2800
+    },
+    "avatar/gloves/COLOR/gloves_02.png": {
+      "x": 2442,
+      "y": 2800
+    },
+    "avatar/gloves/COLOR/gloves_03.png": {
+      "x": 2664,
+      "y": 2800
+    },
+    "avatar/gloves/COLOR/gloves_04.png": {
+      "x": 2886,
+      "y": 2800
+    },
+    "avatar/gloves/COLOR/gloves_05.png": {
+      "x": 3108,
+      "y": 2800
+    },
+    "avatar/gloves/COLOR/gloves_06.png": {
+      "x": 3330,
+      "y": 2800
+    },
+    "avatar/gloves/gloves_01.png": {
+      "x": 3552,
+      "y": 2800
+    },
+    "avatar/gloves/gloves_02.png": {
+      "x": 3774,
+      "y": 2800
+    },
+    "avatar/gloves/gloves_03.png": {
+      "x": 3996,
+      "y": 2800
+    },
+    "avatar/gloves/gloves_04.png": {
+      "x": 4218,
+      "y": 2800
+    },
+    "avatar/gloves/gloves_05.png": {
+      "x": 4440,
+      "y": 2800
+    },
+    "avatar/gloves/gloves_06.png": {
+      "x": 4662,
+      "y": 2800
+    },
+    "avatar/hair_back/COLOR/hair_back_01.png": {
+      "x": 4884,
+      "y": 2800
+    },
+    "avatar/hair_back/COLOR/hair_back_01b.png": {
+      "x": 5106,
+      "y": 2800
+    },
+    "avatar/hair_back/COLOR/hair_back_01c.png": {
+      "x": 5328,
+      "y": 2800
+    },
+    "avatar/hair_back/COLOR/hair_back_01d.png": {
+      "x": 0,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_01e.png": {
+      "x": 222,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_01f.png": {
+      "x": 444,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_01g.png": {
+      "x": 666,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_01h.png": {
+      "x": 888,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02.png": {
+      "x": 1110,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02b.png": {
+      "x": 1332,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02c.png": {
+      "x": 1554,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02d.png": {
+      "x": 1776,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02e.png": {
+      "x": 1998,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02f.png": {
+      "x": 2220,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02g.png": {
+      "x": 2442,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_02h.png": {
+      "x": 2664,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03.png": {
+      "x": 2886,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03b.png": {
+      "x": 3108,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03c.png": {
+      "x": 3330,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03d.png": {
+      "x": 3552,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03e.png": {
+      "x": 3774,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03f.png": {
+      "x": 3996,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03g.png": {
+      "x": 4218,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_03h.png": {
+      "x": 4440,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_04.png": {
+      "x": 4662,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_04b.png": {
+      "x": 4884,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_04c.png": {
+      "x": 5106,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_04d.png": {
+      "x": 5328,
+      "y": 3150
+    },
+    "avatar/hair_back/COLOR/hair_back_04e.png": {
+      "x": 0,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_04f.png": {
+      "x": 222,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_04g.png": {
+      "x": 444,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_04h.png": {
+      "x": 666,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05.png": {
+      "x": 888,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05b.png": {
+      "x": 1110,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05c.png": {
+      "x": 1332,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05d.png": {
+      "x": 1554,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05e.png": {
+      "x": 1776,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05f.png": {
+      "x": 1998,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05g.png": {
+      "x": 2220,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_05h.png": {
+      "x": 2442,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06.png": {
+      "x": 2664,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06b.png": {
+      "x": 2886,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06c.png": {
+      "x": 3108,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06d.png": {
+      "x": 3330,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06e.png": {
+      "x": 3552,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06f.png": {
+      "x": 3774,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06g.png": {
+      "x": 3996,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_06h.png": {
+      "x": 4218,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_07.png": {
+      "x": 4440,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_07b.png": {
+      "x": 4662,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_07c.png": {
+      "x": 4884,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_07d.png": {
+      "x": 5106,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_07e.png": {
+      "x": 5328,
+      "y": 3500
+    },
+    "avatar/hair_back/COLOR/hair_back_07f.png": {
+      "x": 0,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_07g.png": {
+      "x": 222,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_07h.png": {
+      "x": 444,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08.png": {
+      "x": 666,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08b.png": {
+      "x": 888,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08c.png": {
+      "x": 1110,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08d.png": {
+      "x": 1332,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08e.png": {
+      "x": 1554,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08f.png": {
+      "x": 1776,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08g.png": {
+      "x": 1998,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_08h.png": {
+      "x": 2220,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09.png": {
+      "x": 2442,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09b.png": {
+      "x": 2664,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09c.png": {
+      "x": 2886,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09d.png": {
+      "x": 3108,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09e.png": {
+      "x": 3330,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09f.png": {
+      "x": 3552,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09g.png": {
+      "x": 3774,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_09h.png": {
+      "x": 3996,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10.png": {
+      "x": 4218,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10b.png": {
+      "x": 4440,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10c.png": {
+      "x": 4662,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10d.png": {
+      "x": 4884,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10e.png": {
+      "x": 5106,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10f.png": {
+      "x": 5328,
+      "y": 3850
+    },
+    "avatar/hair_back/COLOR/hair_back_10g.png": {
+      "x": 0,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_10h.png": {
+      "x": 222,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11.png": {
+      "x": 444,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11b.png": {
+      "x": 666,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11c.png": {
+      "x": 888,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11d.png": {
+      "x": 1110,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11e.png": {
+      "x": 1332,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11f.png": {
+      "x": 1554,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11g.png": {
+      "x": 1776,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_11h.png": {
+      "x": 1998,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12.png": {
+      "x": 2220,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12b.png": {
+      "x": 2442,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12c.png": {
+      "x": 2664,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12d.png": {
+      "x": 2886,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12e.png": {
+      "x": 3108,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12f.png": {
+      "x": 3330,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12g.png": {
+      "x": 3552,
+      "y": 4200
+    },
+    "avatar/hair_back/COLOR/hair_back_12h.png": {
+      "x": 3774,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_01.png": {
+      "x": 3996,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_02.png": {
+      "x": 4218,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_03.png": {
+      "x": 4440,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_04.png": {
+      "x": 4662,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_05.png": {
+      "x": 4884,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_06.png": {
+      "x": 5106,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_07.png": {
+      "x": 5328,
+      "y": 4200
+    },
+    "avatar/hair_back/hair_back_08.png": {
+      "x": 0,
+      "y": 4550
+    },
+    "avatar/hair_back/hair_back_09.png": {
+      "x": 222,
+      "y": 4550
+    },
+    "avatar/hair_back/hair_back_10.png": {
+      "x": 444,
+      "y": 4550
+    },
+    "avatar/hair_back/hair_back_11.png": {
+      "x": 666,
+      "y": 4550
+    },
+    "avatar/hair_back/hair_back_12.png": {
+      "x": 888,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01.png": {
+      "x": 1110,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01b.png": {
+      "x": 1332,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01c.png": {
+      "x": 1554,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01d.png": {
+      "x": 1776,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01e.png": {
+      "x": 1998,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01f.png": {
+      "x": 2220,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01g.png": {
+      "x": 2442,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_01h.png": {
+      "x": 2664,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02.png": {
+      "x": 2886,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02b.png": {
+      "x": 3108,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02c.png": {
+      "x": 3330,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02d.png": {
+      "x": 3552,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02e.png": {
+      "x": 3774,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02f.png": {
+      "x": 3996,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02g.png": {
+      "x": 4218,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_02h.png": {
+      "x": 4440,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03.png": {
+      "x": 4662,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03b.png": {
+      "x": 4884,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03c.png": {
+      "x": 5106,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03d.png": {
+      "x": 5328,
+      "y": 4550
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03e.png": {
+      "x": 0,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03f.png": {
+      "x": 222,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03g.png": {
+      "x": 444,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_03h.png": {
+      "x": 666,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04.png": {
+      "x": 888,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04b.png": {
+      "x": 1110,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04c.png": {
+      "x": 1332,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04d.png": {
+      "x": 1554,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04e.png": {
+      "x": 1776,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04f.png": {
+      "x": 1998,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04g.png": {
+      "x": 2220,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_04h.png": {
+      "x": 2442,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05.png": {
+      "x": 2664,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05b.png": {
+      "x": 2886,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05c.png": {
+      "x": 3108,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05d.png": {
+      "x": 3330,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05e.png": {
+      "x": 3552,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05f.png": {
+      "x": 3774,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05g.png": {
+      "x": 3996,
+      "y": 4900
+    },
+    "avatar/hair_bonus/COLOR/hair_bonus_05h.png": {
+      "x": 4218,
+      "y": 4900
+    },
+    "avatar/hair_bonus/hair_bonus_01.png": {
+      "x": 4440,
+      "y": 4900
+    },
+    "avatar/hair_bonus/hair_bonus_02.png": {
+      "x": 4662,
+      "y": 4900
+    },
+    "avatar/hair_bonus/hair_bonus_03.png": {
+      "x": 4884,
+      "y": 4900
+    },
+    "avatar/hair_bonus/hair_bonus_04.png": {
+      "x": 5106,
+      "y": 4900
+    },
+    "avatar/hair_bonus/hair_bonus_05.png": {
+      "x": 5328,
+      "y": 4900
+    },
+    "avatar/hair/COLOR/hair_01.png": {
+      "x": 0,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01b.png": {
+      "x": 222,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01c.png": {
+      "x": 444,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01d.png": {
+      "x": 666,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01e.png": {
+      "x": 888,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01f.png": {
+      "x": 1110,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01g.png": {
+      "x": 1332,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_01h.png": {
+      "x": 1554,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02.png": {
+      "x": 1776,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02b.png": {
+      "x": 1998,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02c.png": {
+      "x": 2220,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02d.png": {
+      "x": 2442,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02e.png": {
+      "x": 2664,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02f.png": {
+      "x": 2886,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02g.png": {
+      "x": 3108,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_02h.png": {
+      "x": 3330,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03.png": {
+      "x": 3552,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03b.png": {
+      "x": 3774,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03c.png": {
+      "x": 3996,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03d.png": {
+      "x": 4218,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03e.png": {
+      "x": 4440,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03f.png": {
+      "x": 4662,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03g.png": {
+      "x": 4884,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_03h.png": {
+      "x": 5106,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_04.png": {
+      "x": 5328,
+      "y": 5250
+    },
+    "avatar/hair/COLOR/hair_04b.png": {
+      "x": 0,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_04c.png": {
+      "x": 222,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_04d.png": {
+      "x": 444,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_04e.png": {
+      "x": 666,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_04f.png": {
+      "x": 888,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_04g.png": {
+      "x": 1110,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_04h.png": {
+      "x": 1332,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05.png": {
+      "x": 1554,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05b.png": {
+      "x": 1776,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05c.png": {
+      "x": 1998,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05d.png": {
+      "x": 2220,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05e.png": {
+      "x": 2442,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05f.png": {
+      "x": 2664,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05g.png": {
+      "x": 2886,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_05h.png": {
+      "x": 3108,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06.png": {
+      "x": 3330,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06b.png": {
+      "x": 3552,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06c.png": {
+      "x": 3774,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06d.png": {
+      "x": 3996,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06e.png": {
+      "x": 4218,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06f.png": {
+      "x": 4440,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06g.png": {
+      "x": 4662,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_06h.png": {
+      "x": 4884,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_07.png": {
+      "x": 5106,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_07b.png": {
+      "x": 5328,
+      "y": 5600
+    },
+    "avatar/hair/COLOR/hair_07c.png": {
+      "x": 0,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_07d.png": {
+      "x": 222,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_07e.png": {
+      "x": 444,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_07f.png": {
+      "x": 666,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_07g.png": {
+      "x": 888,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_07h.png": {
+      "x": 1110,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08.png": {
+      "x": 1332,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08b.png": {
+      "x": 1554,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08c.png": {
+      "x": 1776,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08d.png": {
+      "x": 1998,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08e.png": {
+      "x": 2220,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08f.png": {
+      "x": 2442,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08g.png": {
+      "x": 2664,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_08h.png": {
+      "x": 2886,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09.png": {
+      "x": 3108,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09b.png": {
+      "x": 3330,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09c.png": {
+      "x": 3552,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09d.png": {
+      "x": 3774,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09e.png": {
+      "x": 3996,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09f.png": {
+      "x": 4218,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09g.png": {
+      "x": 4440,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_09h.png": {
+      "x": 4662,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_10.png": {
+      "x": 4884,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_10b.png": {
+      "x": 5106,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_10c.png": {
+      "x": 5328,
+      "y": 5950
+    },
+    "avatar/hair/COLOR/hair_10d.png": {
+      "x": 0,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_10e.png": {
+      "x": 222,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_10f.png": {
+      "x": 444,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_10g.png": {
+      "x": 666,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_10h.png": {
+      "x": 888,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11.png": {
+      "x": 1110,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11b.png": {
+      "x": 1332,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11c.png": {
+      "x": 1554,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11d.png": {
+      "x": 1776,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11e.png": {
+      "x": 1998,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11f.png": {
+      "x": 2220,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11g.png": {
+      "x": 2442,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_11h.png": {
+      "x": 2664,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12.png": {
+      "x": 2886,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12b.png": {
+      "x": 3108,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12c.png": {
+      "x": 3330,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12d.png": {
+      "x": 3552,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12e.png": {
+      "x": 3774,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12f.png": {
+      "x": 3996,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12g.png": {
+      "x": 4218,
+      "y": 6300
+    },
+    "avatar/hair/COLOR/hair_12h.png": {
+      "x": 4440,
+      "y": 6300
+    },
+    "avatar/hair/hair_01.png": {
+      "x": 4662,
+      "y": 6300
+    },
+    "avatar/hair/hair_02.png": {
+      "x": 4884,
+      "y": 6300
+    },
+    "avatar/hair/hair_03.png": {
+      "x": 5106,
+      "y": 6300
+    },
+    "avatar/hair/hair_04.png": {
+      "x": 5328,
+      "y": 6300
+    },
+    "avatar/hair/hair_05.png": {
+      "x": 0,
+      "y": 6650
+    },
+    "avatar/hair/hair_06.png": {
+      "x": 222,
+      "y": 6650
+    },
+    "avatar/hair/hair_07.png": {
+      "x": 444,
+      "y": 6650
+    },
+    "avatar/hair/hair_08.png": {
+      "x": 666,
+      "y": 6650
+    },
+    "avatar/hair/hair_09.png": {
+      "x": 888,
+      "y": 6650
+    },
+    "avatar/hair/hair_10.png": {
+      "x": 1110,
+      "y": 6650
+    },
+    "avatar/hair/hair_11.png": {
+      "x": 1332,
+      "y": 6650
+    },
+    "avatar/hair/hair_12.png": {
+      "x": 1554,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_01.png": {
+      "x": 1776,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_02.png": {
+      "x": 1998,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_03.png": {
+      "x": 2220,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_04.png": {
+      "x": 2442,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_05.png": {
+      "x": 2664,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_06.png": {
+      "x": 2886,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_07.png": {
+      "x": 3108,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_08.png": {
+      "x": 3330,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_09.png": {
+      "x": 3552,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_10.png": {
+      "x": 3774,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_11.png": {
+      "x": 3996,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_12.png": {
+      "x": 4218,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_13.png": {
+      "x": 4440,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_14.png": {
+      "x": 4662,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_15.png": {
+      "x": 4884,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_16.png": {
+      "x": 5106,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_17.png": {
+      "x": 5328,
+      "y": 6650
+    },
+    "avatar/MOUTH/mouth_18.png": {
+      "x": 0,
+      "y": 7000
+    },
+    "avatar/MOUTH/mouth_19.png": {
+      "x": 222,
+      "y": 7000
+    },
+    "avatar/MOUTH/mouth_20.png": {
+      "x": 444,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_01.png": {
+      "x": 666,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_02.png": {
+      "x": 888,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_03.png": {
+      "x": 1110,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_04.png": {
+      "x": 1332,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_05.png": {
+      "x": 1554,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_06.png": {
+      "x": 1776,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_07.png": {
+      "x": 1998,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_08.png": {
+      "x": 2220,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_09.png": {
+      "x": 2442,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_10.png": {
+      "x": 2664,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_11.png": {
+      "x": 2886,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_12.png": {
+      "x": 3108,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_13.png": {
+      "x": 3330,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_14.png": {
+      "x": 3552,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_15.png": {
+      "x": 3774,
+      "y": 7000
+    },
+    "avatar/PUPILS/pupils_16.png": {
+      "x": 3996,
+      "y": 7000
+    },
+    "avatar/shoes/COLOR/shoes_01.png": {
+      "x": 4218,
+      "y": 7000
+    },
+    "avatar/shoes/COLOR/shoes_02.png": {
+      "x": 4440,
+      "y": 7000
+    },
+    "avatar/shoes/COLOR/shoes_03.png": {
+      "x": 4662,
+      "y": 7000
+    },
+    "avatar/shoes/COLOR/shoes_04.png": {
+      "x": 4884,
+      "y": 7000
+    },
+    "avatar/shoes/shoes_01.png": {
+      "x": 5106,
+      "y": 7000
+    },
+    "avatar/shoes/shoes_02.png": {
+      "x": 5328,
+      "y": 7000
+    },
+    "avatar/shoes/shoes_03.png": {
+      "x": 0,
+      "y": 7350
+    },
+    "avatar/shoes/shoes_04.png": {
+      "x": 222,
+      "y": 7350
+    },
+    "avatar/top/colors/top_01.png": {
+      "x": 444,
+      "y": 7350
+    },
+    "avatar/top/colors/top_02.png": {
+      "x": 666,
+      "y": 7350
+    },
+    "avatar/top/colors/top_03.png": {
+      "x": 888,
+      "y": 7350
+    },
+    "avatar/top/colors/top_04.png": {
+      "x": 1110,
+      "y": 7350
+    },
+    "avatar/top/colors/top_05.png": {
+      "x": 1332,
+      "y": 7350
+    },
+    "avatar/top/colors/top_06.png": {
+      "x": 1554,
+      "y": 7350
+    },
+    "avatar/top/colors/top_07.png": {
+      "x": 1776,
+      "y": 7350
+    },
+    "avatar/top/colors/top_08.png": {
+      "x": 1998,
+      "y": 7350
+    },
+    "avatar/top/colors/top_09.png": {
+      "x": 2220,
+      "y": 7350
+    },
+    "avatar/top/colors/top_10.png": {
+      "x": 2442,
+      "y": 7350
+    },
+    "avatar/top/colors/top_11.png": {
+      "x": 2664,
+      "y": 7350
+    },
+    "avatar/top/colors/top_12.png": {
+      "x": 2886,
+      "y": 7350
+    },
+    "avatar/top/top_01.png": {
+      "x": 3108,
+      "y": 7350
+    },
+    "avatar/top/top_02.png": {
+      "x": 3330,
+      "y": 7350
+    },
+    "avatar/top/top_03.png": {
+      "x": 3552,
+      "y": 7350
+    },
+    "avatar/top/top_04.png": {
+      "x": 3774,
+      "y": 7350
+    },
+    "avatar/top/top_05.png": {
+      "x": 3996,
+      "y": 7350
+    },
+    "avatar/top/top_06.png": {
+      "x": 4218,
+      "y": 7350
+    },
+    "avatar/top/top_07.png": {
+      "x": 4440,
+      "y": 7350
+    },
+    "avatar/top/top_08.png": {
+      "x": 4662,
+      "y": 7350
+    },
+    "avatar/top/top_09.png": {
+      "x": 4884,
+      "y": 7350
+    },
+    "avatar/top/top_10.png": {
+      "x": 5106,
+      "y": 7350
+    },
+    "avatar/top/top_11.png": {
+      "x": 5328,
+      "y": 7350
+    },
+    "avatar/top/top_12.png": {
+      "x": 0,
+      "y": 7700
+    },
+    "color/arm_right_sleeve.png": {
+      "x": 222,
+      "y": 7700
+    },
+    "color/belt_green_striped.png": {
+      "x": 444,
+      "y": 7700
+    },
+    "color/belt_teal_yinyang.png": {
+      "x": 666,
+      "y": 7700
+    },
+    "color/body_chibi.png": {
+      "x": 888,
+      "y": 7700
+    },
+    "color/body_elf.png": {
+      "x": 1110,
+      "y": 7700
+    },
+    "color/body_muscular.png": {
+      "x": 1332,
+      "y": 7700
+    },
+    "color/boot_orange_gem.png": {
+      "x": 1554,
+      "y": 7700
+    },
+    "color/boots_brown_green.png": {
+      "x": 1776,
+      "y": 7700
+    },
+    "color/boots_jet_rocket.png": {
+      "x": 1998,
+      "y": 7700
+    },
+    "color/boots_navy_gold_swirl.png": {
+      "x": 2220,
+      "y": 7700
+    },
+    "color/boots_white_armored.png": {
+      "x": 2442,
+      "y": 7700
+    },
+    "color/capelet_green_leaf.png": {
+      "x": 2664,
+      "y": 7700
+    },
+    "color/chestplate_white_gold.png": {
+      "x": 2886,
+      "y": 7700
+    },
+    "color/eyes_amber.png": {
+      "x": 3108,
+      "y": 7700
+    },
+    "color/eyes_blue.png": {
+      "x": 3330,
+      "y": 7700
+    },
+    "color/eyes_brown.png": {
+      "x": 3552,
+      "y": 7700
+    },
+    "color/eyes_heterochrom.png": {
+      "x": 3774,
+      "y": 7700
+    },
+    "color/gauntlet_silver_left.png": {
+      "x": 3996,
+      "y": 7700
+    },
+    "color/gauntlet_silver_right.png": {
+      "x": 4218,
+      "y": 7700
+    },
+    "color/gloves_brown_alt.png": {
+      "x": 4440,
+      "y": 7700
+    },
+    "color/gloves_brown.png": {
+      "x": 4662,
+      "y": 7700
+    },
+    "color/greaves_white_trident.png": {
+      "x": 4884,
+      "y": 7700
+    },
+    "color/jacket_green_gold_alt.png": {
+      "x": 5106,
+      "y": 7700
+    },
+    "color/jacket_green_gold.png": {
+      "x": 5328,
+      "y": 7700
+    },
+    "color/necklace_braided_pendant.png": {
+      "x": 0,
+      "y": 8050
+    },
+    "color/necklace_collar_gem.png": {
+      "x": 222,
+      "y": 8050
+    },
+    "color/overlay_silhouette_female.png": {
+      "x": 444,
+      "y": 8050
+    },
+    "color/overlay_silhouette_male.png": {
+      "x": 666,
+      "y": 8050
+    },
+    "color/shirt_purple_striped_alt.png": {
+      "x": 888,
+      "y": 8050
+    },
+    "color/shirt_purple_striped.png": {
+      "x": 1110,
+      "y": 8050
+    },
+    "color/shoes_orange_gold.png": {
+      "x": 1332,
+      "y": 8050
+    },
+    "color/shorts_grey_green.png": {
+      "x": 1554,
+      "y": 8050
+    },
+    "color/shorts_white_belt.png": {
+      "x": 1776,
+      "y": 8050
+    },
+    "color/shoulder_pauldron_buckle_gold.png": {
+      "x": 1998,
+      "y": 8050
+    },
+    "color/shoulder_pauldron_gold.png": {
+      "x": 2220,
+      "y": 8050
+    },
+    "color/shoulder_pauldron_white_gold.png": {
+      "x": 2442,
+      "y": 8050
+    },
+    "color/skirt_blue_gold.png": {
+      "x": 2664,
+      "y": 8050
+    },
+    "color/skirt_green_gold.png": {
+      "x": 2886,
+      "y": 8050
+    },
+    "color/sleeves_white_gold.png": {
+      "x": 3108,
+      "y": 8050
+    },
+    "color/sword_fantasy_alt.png": {
+      "x": 3330,
+      "y": 8050
+    },
+    "color/sword_fantasy.png": {
+      "x": 3552,
+      "y": 8050
+    },
+    "color/toga_white_gold.png": {
+      "x": 3774,
+      "y": 8050
+    },
+    "color/vest_white_orange_alt.png": {
+      "x": 3996,
+      "y": 8050
+    },
+    "color/vest_white_orange.png": {
+      "x": 4218,
+      "y": 8050
+    }
+  }
+}
