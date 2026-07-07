@@ -14,7 +14,7 @@ npm run dev       # Next.js app at http://localhost:3000
 
 The Next.js app includes API routes and serves assets — you do **not** need the legacy Express server for normal development.
 
-**Routing:** UI navigation uses **React Router** (`createBrowserRouter`) with browser history. Route definitions live in `src/router/router.tsx`. View components live in `src/views/`. Next.js only hosts the SPA shell (`src/app/[[...slug]]/page.tsx`) plus `/api/*` and `/assets/*`.
+**Routing:** UI pages use the **Next.js App Router** under `src/app/`. View components live in `src/views/`. API routes are under `src/app/api/`; static assets under `src/app/assets/`.
 
 ### Legacy stack (optional)
 

@@ -1,6 +1,7 @@
 "use client";
 
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { NavItem } from "@/lib/class-settings/nav-items";
 
 interface Props {
@@ -10,12 +11,12 @@ interface Props {
 }
 
 export function SidebarNav({ items, className, children }: Props) {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
 
   return (
     <div className={`flex min-h-screen ${className ?? ""}`}>
       <aside className="w-56 shrink-0 border-r border-border bg-surface px-4 py-6">
-        <Link to="/teacher/dashboard" className="mb-8 flex items-center gap-2 px-2">
+        <Link href="/teacher/dashboard" className="mb-8 flex items-center gap-2 px-2">
           <span className="text-2xl text-gold" aria-hidden>
             ⛨
           </span>
@@ -26,11 +27,13 @@ export function SidebarNav({ items, className, children }: Props) {
         </Link>
         <nav className="space-y-1">
           {items.map((item) => {
-            const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
+            const active =
+              pathname === item.href ||
+              (pathname?.startsWith(`${item.href}/`) ?? false);
             return (
               <Link
                 key={item.href}
-                to={item.href}
+                href={item.href}
                 className={`block rounded-xl px-3 py-2 text-sm font-semibold transition ${
                   active
                     ? "bg-accent/10 text-accent"

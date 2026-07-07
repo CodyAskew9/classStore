@@ -1,6 +1,9 @@
 import { PrismaClient, Role, TransactionType } from "@prisma/client";
+import { hashPassword } from "../src/lib/auth/password";
 
 const prisma = new PrismaClient();
+
+const DEMO_PASSWORD = "classroom123";
 
 const BOY_AVATAR = {
   colorMode: true,
@@ -24,19 +27,31 @@ const BOY_AVATAR = {
 };
 
 async function main() {
+  const passwordHash = await hashPassword(DEMO_PASSWORD);
+
   const existing = await prisma.user.findFirst({ where: { role: Role.STUDENT } });
   if (existing) {
-    console.log("Seed skipped — student already exists:", existing.id);
+    await prisma.user.updateMany({
+      where: { email: "teacher@classcrest.demo" },
+      data: { passwordHash },
+    });
+    await prisma.user.updateMany({
+      where: { email: "parent@classcrest.demo" },
+      data: { passwordHash },
+    });
+    const teacher = await prisma.user.findFirst({ where: { email: "teacher@classcrest.demo" } });
+    const classroom = await prisma.class.findFirst({ where: { joinCode: "QUEST12" } });
+    if (teacher && classroom && !teacher.classId) {
+      await prisma.user.update({
+        where: { id: teacher.id },
+        data: { classId: classroom.id },
+      });
+    }
+    console.log("Seed skipped — demo users already exist.");
+    console.log("  Demo password (teacher/parent):", DEMO_PASSWORD);
+    console.log("  Class join code: QUEST12");
     return;
   }
-
-  const teacher = await prisma.user.create({
-    data: {
-      name: "Ms. Rivera",
-      email: "teacher@classcrest.demo",
-      role: Role.TEACHER,
-    },
-  });
 
   const classroom = await prisma.class.create({
     data: {
@@ -75,10 +90,19 @@ async function main() {
     },
   });
 
+  const teacher = await prisma.user.create({
+    data: {
+      name: "Ms. Rivera",
+      email: "teacher@classcrest.demo",
+      passwordHash,
+      role: Role.TEACHER,
+      classId: classroom.id,
+    },
+  });
+
   const student = await prisma.user.create({
     data: {
       name: "Alex Johnson",
-      email: "alex@classcrest.demo",
       role: Role.STUDENT,
       classId: classroom.id,
       avatarConfig: BOY_AVATAR,
@@ -103,10 +127,20 @@ async function main() {
     },
   });
 
+  await prisma.user.create({
+    data: {
+      name: "Sam Rivera",
+      role: Role.STUDENT,
+      classId: classroom.id,
+      avatarConfig: { ...BOY_AVATAR, hair: "hair_02.png", bodyType: "female", body: "body_02.png" },
+    },
+  });
+
   const parent = await prisma.user.create({
     data: {
       name: "Jordan Johnson",
       email: "parent@classcrest.demo",
+      passwordHash,
       role: Role.PARENT,
       children: {
         create: { studentId: student.id },
@@ -132,10 +166,9 @@ async function main() {
   });
 
   console.log("ClassCrest seed complete");
-  console.log("  Teacher:", teacher.id);
-  console.log("  Student:", student.id);
-  console.log("  Parent:", parent.id);
-  console.log("  Class join code:", classroom.joinCode);
+  console.log("  Teacher:", teacher.email, "| password:", DEMO_PASSWORD);
+  console.log("  Parent:", parent.email, "| password:", DEMO_PASSWORD);
+  console.log("  Students: Alex Johnson, Sam Rivera (join code QUEST12, no email login)");
 }
 
 main()

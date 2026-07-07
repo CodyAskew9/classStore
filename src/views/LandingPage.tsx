@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export function LandingPage() {
   return (
@@ -14,10 +14,10 @@ export function LandingPage() {
           </div>
         </div>
         <div className="flex gap-3">
-          <Link to="/login" className="btn-ghost">
+          <Link href="/login" className="btn-ghost">
             Log in
           </Link>
-          <Link to="/register" className="btn-primary">
+          <Link href="/register" className="btn-primary">
             Get started
           </Link>
         </div>
@@ -33,14 +33,11 @@ export function LandingPage() {
             and allowance. Physical supply orders use USD cents — never floating-point money.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/teacher/dashboard" className="btn-primary">
-              Teacher portal
+            <Link href="/login" className="btn-primary">
+              Sign in
             </Link>
-            <Link to="/student/dashboard" className="btn-ghost">
-              Student portal
-            </Link>
-            <Link to="/parent/dashboard" className="btn-ghost">
-              Parent portal
+            <Link href="/student/join" className="btn-ghost">
+              Student — join class
             </Link>
           </div>
         </section>

@@ -153,7 +153,8 @@ export function getOutfitPreviewRenderPaths(outfit: FantasyOutfit, bodyType: Bod
       }
       continue;
     }
-    const filename = preset[slot];
+    if (slot === "accessory") continue;
+    const filename = preset[slot as Exclude<AvatarSlot, "accessory">];
     if (!filename) continue;
     const { folder } = getCategoryBySlot(slot);
     paths.push(resolveAssetUrlPath(folder, filename, preset.colorMode));

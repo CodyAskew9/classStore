@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { AvatarComposer } from "@/components/avatar/AvatarComposer";
 
 interface DashboardData {
@@ -49,7 +49,7 @@ export function StudentDashboardPage() {
             <p className="text-sm font-semibold uppercase tracking-wide text-gold">Your hero</p>
             <h1 className="font-display text-3xl font-bold sm:text-4xl">Hi, {data.name}</h1>
             <p className="mt-1 text-muted">{data.className ?? "Your class"}</p>
-            <Link to="/student/avatar" className="btn-primary mt-5 inline-flex">
+            <Link href="/student/avatar" className="btn-primary mt-5 inline-flex">
               Dress up
             </Link>
           </div>

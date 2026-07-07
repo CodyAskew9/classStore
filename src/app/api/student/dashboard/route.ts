@@ -1,16 +1,23 @@
 import { NextResponse } from "next/server";
+import { Role } from "@prisma/client";
 import { getAvatarRenderPaths, normalizeAvatarConfig } from "@/lib/avatar/avatar";
+import { getSession } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
 import { getWalletBalance, getWalletTransactions } from "@/lib/wallet/queries";
 
 export async function GET() {
+  const session = await getSession();
+  if (!session || session.role !== Role.STUDENT) {
+    return NextResponse.json({ error: "Sign in as a student first" }, { status: 401 });
+  }
+
   const student = await prisma.user.findFirst({
-    where: { role: "STUDENT" },
+    where: { id: session.userId, role: Role.STUDENT },
     include: { class: { select: { name: true } } },
   });
 
   if (!student) {
-    return NextResponse.json({ error: "No student found. Run npm run db:seed." }, { status: 404 });
+    return NextResponse.json({ error: "Student not found" }, { status: 404 });
   }
 
   const [schoolBalance, homeBalance, recentSchool, pendingChecklist] = await Promise.all([

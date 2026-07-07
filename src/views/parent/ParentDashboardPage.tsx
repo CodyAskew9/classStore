@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface ChildData {
   id: string;
@@ -33,7 +33,7 @@ export function ParentDashboardPage() {
               <p className="text-xs text-muted">Parent portal</p>
             </div>
           </div>
-          <Link to="/login" className="text-sm font-semibold text-muted">
+          <Link href="/login" className="text-sm font-semibold text-muted">
             Account
           </Link>
         </div>

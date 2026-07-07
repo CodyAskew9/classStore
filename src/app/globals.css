@@ -210,7 +210,51 @@ body {
   }
 
   .error-banner {
-    @apply mb-3 text-sm text-red-700;
+    @apply mb-3 rounded-xl bg-red-50 px-3 py-2 text-sm text-red-700;
+  }
+
+  .auth-input {
+    @apply block w-full rounded-xl border border-border bg-white px-3 py-2.5 text-base outline-none transition focus:border-accent focus:ring-2 focus:ring-[var(--accent-soft)];
+  }
+
+  .auth-input--error {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-100;
+  }
+
+  .auth-role-card {
+    @apply no-underline text-inherit;
+  }
+
+  .auth-role-pill {
+    @apply flex-1 rounded-full border-2 border-border bg-white px-4 py-2 text-sm font-semibold text-muted transition;
+  }
+
+  .auth-role-pill.active {
+    @apply border-accent bg-[var(--accent-soft)] text-accent;
+  }
+
+  .auth-roster {
+    @apply max-h-[min(50vh,360px)] space-y-2 overflow-y-auto;
+  }
+
+  .auth-roster-btn {
+    @apply flex w-full items-center gap-3 rounded-xl border-2 border-border bg-[#faf9f6] px-4 py-3 text-left transition hover:border-accent hover:bg-white disabled:opacity-60;
+  }
+
+  .auth-roster-avatar {
+    @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--gold-soft)] font-display text-lg font-bold text-accent;
+  }
+
+  .auth-qr-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4;
+  }
+
+  .auth-qr-panel {
+    @apply w-full max-w-md rounded-2xl border border-border bg-surface p-4 shadow-lg;
+  }
+
+  .auth-qr-video {
+    @apply mt-3 aspect-square w-full rounded-xl bg-black object-cover;
   }
 }
 
